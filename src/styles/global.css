@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Lato", sans-serif;
+}
+
+/* Prose styles for blog post content */
+.prose-knoli {
+  @apply text-gray-700 leading-relaxed;
+}
+
+.prose-knoli h2 {
+  @apply text-2xl font-bold text-gray-900 mt-12 mb-4 tracking-tight;
+}
+
+.prose-knoli h3 {
+  @apply text-xl font-semibold text-gray-900 mt-8 mb-3;
+}
+
+.prose-knoli p {
+  @apply mb-6 text-lg leading-relaxed font-light;
+  font-family: "Newsreader", serif;
+}
+
+.prose-knoli a {
+  @apply text-gray-900 underline underline-offset-2 hover:text-purple-600 transition-colors;
+}
+
+.prose-knoli ul {
+  @apply mb-6 space-y-2 pl-4;
+  font-family: "Newsreader", serif;
+}
+
+.prose-knoli ol {
+  @apply mb-6 space-y-2 pl-4 list-decimal;
+  font-family: "Newsreader", serif;
+}
+
+.prose-knoli li {
+  @apply text-lg font-light leading-relaxed;
+}
+
+.prose-knoli blockquote {
+  @apply border-l-4 border-purple-200 pl-5 my-8 italic text-gray-500;
+  font-family: "Newsreader", serif;
+}
+
+.prose-knoli blockquote p {
+  @apply text-gray-500 text-xl;
+}
+
+.prose-knoli code {
+  @apply bg-gray-100 text-gray-800 text-sm rounded px-1.5 py-0.5 font-mono;
+}
+
+.prose-knoli pre {
+  @apply bg-gray-900 text-gray-100 rounded-xl p-6 mb-6 overflow-x-auto text-sm;
+}
+
+.prose-knoli pre code {
+  @apply bg-transparent text-gray-100 p-0;
+}
+
+.prose-knoli img {
+  @apply rounded-2xl my-8 w-full;
+}
+
+.prose-knoli hr {
+  @apply border-gray-100 my-12;
+}
+
+.prose-knoli strong {
+  @apply font-semibold text-gray-900;
+}
