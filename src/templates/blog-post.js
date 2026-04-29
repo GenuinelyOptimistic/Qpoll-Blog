@@ -2,6 +2,7 @@ import React from "react";
 import { graphql, Link } from "gatsby";
 import { Layout } from "../components/Layout";
 import { Seo } from "../components/Seo";
+import { ReadAloud } from "../components/ReadAloud";
 
 export default function BlogPostTemplate({ data, pageContext }) {
   const post = data.markdownRemark;
@@ -74,6 +75,9 @@ export default function BlogPostTemplate({ data, pageContext }) {
             {description}
           </p>
         )}
+
+        {/* Listen button */}
+        <ReadAloud title={title} html={post.html} />
 
         {/* Post body */}
         <div
