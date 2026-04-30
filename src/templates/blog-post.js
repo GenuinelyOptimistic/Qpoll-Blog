@@ -69,12 +69,12 @@ export default function BlogPostTemplate({ data, pageContext }) {
           )}
         </div>
 
-        {/* Description / lede */}
+        {/* Description / lede
         {description && (
           <p className="text-xl text-gray-500 font-light leading-relaxed mb-12 border-b border-gray-100 pb-12">
             {description}
           </p>
-        )}
+        )} */}
 
         {/* Listen button */}
         <ReadAloud title={title} html={post.html} />
